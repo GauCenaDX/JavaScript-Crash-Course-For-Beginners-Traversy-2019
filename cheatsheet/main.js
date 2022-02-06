@@ -68,7 +68,7 @@ const person = {
         city: 'Boston',
         state: 'MA'
     }
-}
+};
 
 console.log(person);
 console.log(person.firstName, person.lastName);
@@ -144,7 +144,8 @@ const todoText = todos.map(function(todo) {
 
 console.log(todoText);
 
-// filter filter out and return only objects that satisfy the conditions
+// filter filters out and return only objects that satisfy the conditions
+// filter also returns an array
 const todoCompleted = todos.filter(function(todo) {
     return todo.isCompleted === true;
 });
@@ -213,9 +214,10 @@ const addNums3 = (num1 = 1, num2 = 2) => {
 
 console.log(addNums3(5, 5));
 
+// Using forEach with Arrow Function
 todos.forEach((todo) => console.log(todo));
 
-// OOP
+// OOP - Object Oriented Programming
 
 // Constructor function
 function Person(firstName, lastName, dob) {
